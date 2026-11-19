@@ -1,0 +1,282 @@
+/* GENERAL SETTINGS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    min-height:100vh;
+}
+
+
+/* HEADER AND NAVIGATION */
+header{
+    background:rgba(0,0,0,0.4);
+    padding:20px 50px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    font-size:28px;
+    color:#00e5ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+
+/* MAIN CONTENT */
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #00e5ff;
+    box-shadow:0 0 25px #00e5ff;
+    margin-bottom:20px;
+}
+
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+
+.hero h3{
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+    border:none;
+}
+
+
+.btn:hover{
+    background:#ffd700;
+    color:black;
+}
+
+
+/* SKILLS AND PROJECT CARDS */
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+
+.skill-card{
+    background:rgba(255,255,255,0.15);
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+    backdrop-filter:blur(10px);
+}
+
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.skill-card h2{
+    margin-bottom:15px;
+}
+
+
+.skill-card p{
+    line-height:1.6;
+}
+
+
+/* SKILL PROGRESS BARS */
+.bar{
+    background:white;
+    height:10px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+
+.bar div{
+    height:100%;
+    background:#00e5ff;
+    border-radius:10px;
+}
+
+
+.html{
+    width:90%;
+}
+
+.css{
+    width:85%;
+}
+
+.javascript{
+    width:70%;
+}
+
+.sql{
+    width:85%;
+}
+
+.python{
+    width:65%;
+}
+
+.git{
+    width:70%;
+}
+
+
+/* CONTACT FORM */
+.contact-info{
+    background:rgba(255,255,255,0.15);
+    max-width:500px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:15px;
+}
+
+
+.contact-info p{
+    margin:15px;
+}
+
+
+.contact-info a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+
+.contact-form{
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+
+.contact-form button{
+    cursor:pointer;
+}
+
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    background:rgba(0,0,0,0.4);
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+@media(max-width:768px){
+
+    header{
+        padding:20px;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:20px;
+    }
+
+
+    .hero h1{
+        font-size:32px;
+    }
+
+
+    .profile{
+        width:150px;
+        height:150px;
+    }
+
+
+    .skill-card{
+        width:90%;
+    }
+
+}
